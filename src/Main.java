@@ -7,7 +7,7 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
             Scanner input = new Scanner(System.in);
-            System.out.println("Put path to your file:");
+            System.out.println("Put path to your file:"); // taking path to file
             String path = input.nextLine();
             File obj = new File(path);
             Scanner myReader = new Scanner(obj);
@@ -82,7 +82,7 @@ public class Main {
 
                 else {
 
-                    System.out.println("Wong answer!");
+                    System.out.println("Wrong answer!");
                     for (int i = 0; i < partManDead; i++) {
                         System.out.print(man.charAt(i));
                     }
